@@ -178,13 +178,26 @@
 	 position: relative;
 	 top: -160px;
 	 left: 60px;
-	 height: 550px;
+	 height: 400px;
 	 width: 40%;
 	 z-index: 2;
-	 background: linear-gradient( white, rgb(255, 242, 244));
+	 background: linear-gradient( sky, rgb(200, 200, 255));
 	 border-radius: 30px;
-	 box-shadow: 0px 0px 102px 10px rgba(255, 240, 240, 0.5);
+	 box-shadow: 0px 0px 10px 10px rgba(255, 240, 240, 0.5);
+	 animation-name: fade-in;
+	 animation-duration: 1s;
+	 animation-timing-function: linear;
 	}
+	
+@keyframes fade-in{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}	
+	
+}	
 #about-me{
 	position: absolute;
 	padding: 20px;
@@ -192,6 +205,7 @@
 	text-align: center;
 	font-size: 30px;
 	font-family: Lobster, monospace;
+	color: white;
 }	
 #more-abt-me{
 	Position: absolute;
@@ -201,7 +215,7 @@
 	font-family: Quicksand&display;
 	font-size: 20px;
 	line-height: 1.5;
-	
+	color: white;
 }
 </style>
 <div>
