@@ -175,18 +175,15 @@
   }
   
   .intro-box{
-	 position: relative;
-	 top: -160px;
-	 left: 60px;
-	 height: 400px;
-	 width: 40%;
-	 z-index: 2;
+	z-index: 20;
 	 background: transparent;
 	 border-radius: 30px;
 	 box-shadow: 0px 0px 10px 10px rgba(255, 240, 240, 0.5);
 	 animation-name: fade-in;
 	 animation-duration: 1s;
 	 animation-timing-function: linear;
+	 padding: 40px;
+	 margin: 20px;
 	}
 	
 @keyframes fade-in{
@@ -201,20 +198,25 @@
 #about-me{
 	position: relative;
 	padding: 20px;
-	text-align: center;
+	text-align: left;
 	font-size: 30px;
 	font-family: Lobster, monospace;
 	color: white;
 }	
 #more-abt-me{
-	Position: absolute;
-	top: 45px;
-	left: 10px;
 	padding: 20px;
 	font-family: Quicksand&display;
 	font-size: 20px;
 	line-height: 1.5;
 	color: white;
+}
+.flex-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: absolute;
+	top: 20px;
+	
 }
 </style>
 <div>
@@ -233,8 +235,11 @@
 <div class="istar-1 iistar-9"></div>
 <div class="moon moon-ani"></div>
 </div>
+<div class="flex-container">
 <div class="intro-box">
 <p id="about-me"> <strong>Hi,</strong> </p>
 <p id="more-abt-me">My name is Harshavardhan. I am a tech enthusiast and this is my first website. </p>
+
+</div>
 </div>	
 </html>
